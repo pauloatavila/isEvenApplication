@@ -13,6 +13,9 @@
 		C62D0A3A2661D00B005DA674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62D0A382661D00B005DA674 /* Main.storyboard */; };
 		C62D0A3C2661D010005DA674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62D0A3B2661D010005DA674 /* Assets.xcassets */; };
 		C62D0A3F2661D010005DA674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62D0A3D2661D010005DA674 /* LaunchScreen.storyboard */; };
+		C62D0A6D2661D5FE005DA674 /* EvenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D0A6C2661D5FE005DA674 /* EvenResult.swift */; };
+		C62D0A702661D6E1005DA674 /* EvenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D0A6F2661D6E1005DA674 /* EvenService.swift */; };
+		C62D0A772661D7B4005DA674 /* EvenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D0A762661D7B4005DA674 /* EvenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C62D0A3B2661D010005DA674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C62D0A3E2661D010005DA674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C62D0A402661D010005DA674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62D0A6C2661D5FE005DA674 /* EvenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenResult.swift; sourceTree = "<group>"; };
+		C62D0A6F2661D6E1005DA674 /* EvenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenService.swift; sourceTree = "<group>"; };
+		C62D0A762661D7B4005DA674 /* EvenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		C62D0A312661D00B005DA674 /* isEven */ = {
 			isa = PBXGroup;
 			children = (
+				C62D0A6B2661D5BB005DA674 /* View */,
+				C62D0A6A2661D5A8005DA674 /* ViewModel */,
+				C62D0A692661D5A1005DA674 /* Service */,
+				C62D0A682661D59B005DA674 /* Model */,
 				C62D0A322661D00B005DA674 /* AppDelegate.swift */,
 				C62D0A342661D00B005DA674 /* SceneDelegate.swift */,
-				C62D0A362661D00B005DA674 /* ViewController.swift */,
-				C62D0A382661D00B005DA674 /* Main.storyboard */,
 				C62D0A3B2661D010005DA674 /* Assets.xcassets */,
 				C62D0A3D2661D010005DA674 /* LaunchScreen.storyboard */,
 				C62D0A402661D010005DA674 /* Info.plist */,
 			);
 			path = isEven;
+			sourceTree = "<group>";
+		};
+		C62D0A682661D59B005DA674 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C62D0A6C2661D5FE005DA674 /* EvenResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C62D0A692661D5A1005DA674 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C62D0A6F2661D6E1005DA674 /* EvenService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C62D0A6A2661D5A8005DA674 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C62D0A762661D7B4005DA674 /* EvenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C62D0A6B2661D5BB005DA674 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C62D0A382661D00B005DA674 /* Main.storyboard */,
+				C62D0A362661D00B005DA674 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62D0A6D2661D5FE005DA674 /* EvenResult.swift in Sources */,
 				C62D0A372661D00B005DA674 /* ViewController.swift in Sources */,
+				C62D0A772661D7B4005DA674 /* EvenViewModel.swift in Sources */,
 				C62D0A332661D00B005DA674 /* AppDelegate.swift in Sources */,
+				C62D0A702661D6E1005DA674 /* EvenService.swift in Sources */,
 				C62D0A352661D00B005DA674 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
